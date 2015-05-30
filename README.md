@@ -1,0 +1,28 @@
+#Batteri
+
+A simple GTK Tray applet written in C to display an icon based on the current GTK icon theme indicating the status of the battery.
+
+It includes a tooltip with battery percentage as well as time to charge/discharge.
+
+The tray icon also has a dropdown menu supporting:
+1. Suspend
+2. Hibernate
+3. About
+4. Information
+5. Quit
+
+This repo contains the files needed for a Debian/Ubuntu package, but is built with CMake and should simply work on most GNU/Linux systems.
+
+### Build Dependencies:
+```
+ libgtk2.0-dev,
+ libgcc1,
+ cmake,
+ libupower-glib-dev,
+ libgio2.0-cil-dev,
+ pkg-config
+```
+####compile using:
+```
+gcc `pkg-config gtk+-x11-2.0 --cflags` `pkg-config upower-glib --cflags` `pkg-config gobject-2.0 --cflags` -finline-small-functions -ffunction-sections -fdata-sections -fmerge-all-constants -fomit-frame-pointer -mno-accumulate-outgoing-args -fno-unwind-tables -fno-asynchronous-unwind-tables -Os batteri.c -o batteri -lgobject-2.0 -lglib-2.0 -lgio-2.0 -lupower-glib -lgtk-x11-2.0 -lgdk-x11-2.0
+```
