@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Batteri
+Name[en]=Batteri
+Name[sv]=Batteri
+GenericName=Laptop Battery Monitor
+Comment=Simple laptop battery monitor with suspending capabilities
+Icon=battery
+Exec=batteri
+Terminal=false
+Type=Application
+Categories=Settings;System;

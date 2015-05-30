@@ -1,0 +1,28 @@
+batteri (0.5.0ubuntu1) UNRELEASED; urgency=medium
+
+  * added desktop file
+  * use getops() to get rid of ALL compiler warnings (hurray!!)
+  * human readable percentage and time in tooltip
+  * power information dialog
+  * very minimal about dialog
+  * suspend/hibernate/info/about/quit in tray drop down
+  * debian/copyright
+   - include orig source of upower API
+  * debian/control
+   - changed /any/all
+  * bumped changelog version for lp
+
+ -- Israel Dahl <israeldahl@gmail.com>  Fri, 29 May 2015 19:10:27 -0500
+
+batteri (0.0.4ubuntu1) UNRELEASED; urgency=medium
+
+  * beginning packaging and tray drop down menu/about window 
+
+ -- Israel Dahl <israeldahl@gmail.com>  Mon, 25 May 2015 23:07:30 -0500
+
+batteri (0.0.4) precise; urgency=medium
+
+  * Initial release.
+    - started a upower/gtk tray applet
+
+ -- Israel Dahl <israeldahl@gmail.com>  Sun, 24 May 2015 11:13:59 -0500

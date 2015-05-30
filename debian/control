@@ -1,0 +1,20 @@
+Source: batteri
+Section: misc
+Priority: optional
+Maintainer: Israel Dahl <israel@torios.org>
+Build-Depends:
+ debhelper (>= 9.0.0),
+ libgtk2.0-dev,
+ libgcc1,
+ cmake,
+ libupower-glib-dev,
+ libgio2.0-cil-dev,
+Standards-Version: 3.9.5
+Homepage: http://www.torios.net/
+
+Package: batteri
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: jwm
+Description: Batteri
+  This provides a lightweight battery indicator using upower and dbus
