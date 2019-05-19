@@ -6,4 +6,5 @@
  build(компиляция):
  
  cd src
+ 
  make
